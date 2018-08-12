@@ -16,14 +16,18 @@ def assign_rooms(speakers)
   assignments
 end
 
-def printer(array)
-  array.each do |element|
+def printer
+  speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+  batched_badges = batch_badge_creator speakers
+  assignments = assign_rooms speakers
+
+  batched_badges.each do |element|
+    puts element
+  end
+
+  assignments.each do |element|
     puts element
   end
 end
 
-speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-batched_badges = batch_badge_creator speakers
-printer batched_badges
-assignments = assign_rooms speakers
-printer assignments
+printer
