@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Write your code here.
 
 speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
@@ -32,5 +33,3 @@ def printer(array)
     puts card
   end
 end
-
-printer(speakers)
